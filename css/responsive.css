@@ -1,0 +1,28 @@
+/*parametr screen dotyczy tylko ekranów, może być też np. print*/
+@media screen and (min-width:769px) and (max-width:992px){
+    .box{
+        width: 48%;
+    }
+    #gallery{
+        width: 90%;
+    }
+}
+@media screen and  (min-width:481px) and (max-width:768px){
+    .box{ 
+        width: 98%;
+    }
+    #gallery{
+        width: 95%;
+    }
+}
+@media screen and (max-width:480px){
+    .box{ 
+        width: 100%;
+    }
+    #gallery{
+        width: 100%;
+    }
+    body{
+        margin: 0;
+    }
+}
