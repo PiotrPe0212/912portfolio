@@ -4,58 +4,87 @@ body {
 }
 
 #menu {
-    width: 100%;
     height: 50px;
     background-color: #ffffff;
     color: #1ac056;
-    position: absolute;
+    position: relative;
     top: 0;
     margin: 0;
     padding: 0;
-    
+    vertical-align: middle;
+}
+
+ul {
+    margin: 0;
 }
 
 .menu {
     display: inline-block;
-    margin:40px;
+    margin: 0 40px 0 40px;
     overflow: auto;
     float: right;
-    margin-top: auto;
-    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+      vertical-align: middle;
 }
-header{
-    background-image:url(../img/header-background.jpg);
+
+header {
+    background-image: url(../img/header-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    width: 100%;
+    position: relative;
     height: 600px;
-    top: 50px;
     color: #fff;
 }
-#Name{
+
+#Name {
     text-align: center;
     font-family: "Roboto";
     font-size: 80px;
     font-weight: 300;
     padding-top: 220px;
     margin: 10px;
-    
+
 }
-#FED{
+
+#FED {
     text-align: center;
     font-size: 30px;
     font-weight: 200;
     margin: 10px;
 }
-#about{
-    position: absolute;
-    width: 100%;
+
+#about {
+    position: relative;
     height: 400px;
-    top: 650px;
+    margin:0;
+    box-shadow:0 0px 20px 0px grey;
 }
 
-#jn{
+#jn {
+   width: 300px;
+    height: 300px;
     
+    float: left;
+}
+#jn img{
+    width: 100%;
+        float: left;
+
+}
+#abouth2{
+    display: inline-block;
+}
+#skill {
+    position: relative;
+    height: 400px;
+    margin:0;
+    text-align: center;
+}
+.logo{
+    display: inline-block;
+}
+.logo figcaption{
+    padding-top: 10px;
 }
