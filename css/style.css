@@ -1,31 +1,43 @@
+/*General styles*/
+
 body {
     margin: 0;
     font-family: "Lato";
 }
 
 #menu {
-    height: 50px;
+    height: 60px;
+    width: 100%;
     background-color: #ffffff;
     color: #1ac056;
-    position: relative;
+    position: fixed;
     top: 0;
     margin: 0;
     padding: 0;
     vertical-align: middle;
+    z-index: 10;
 }
 
 ul {
     margin: 0;
 }
 
+.menu a {
+    text-decoration: none;
+    color: 1ac056;
+}
+
+.menu a :hover {
+    color: #291f1a;
+}
+
 .menu {
+    list-style: none;
     display: inline-block;
-    margin: 0 40px 0 40px;
+    padding: 20px 40px;
     overflow: auto;
     float: right;
     top: 0;
-    bottom: 0;
-      vertical-align: middle;
 }
 
 header {
@@ -34,57 +46,139 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 600px;
+    height: 150vh;
     color: #fff;
 }
 
-#Name {
+.mainheader {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    left: 0;
+    right: 0;
     text-align: center;
+}
+
+#Name {
     font-family: "Roboto";
-    font-size: 80px;
+    font-size: 4em;
     font-weight: 300;
-    padding-top: 220px;
-    margin: 10px;
+    padding-top: 50vh;
+    margin: 0;
 
 }
 
 #FED {
-    text-align: center;
     font-size: 30px;
     font-weight: 200;
-    margin: 10px;
 }
 
 #about {
     position: relative;
-    height: 400px;
-    margin:0;
-    box-shadow:0 0px 20px 0px grey;
+    height: 450px;
+    margin: 0;
+    box-shadow: 0 0px 20px 0px grey;
 }
 
-#jn {
-   width: 300px;
-    height: 300px;
-    
-    float: left;
-}
-#jn img{
-    width: 100%;
-        float: left;
-
-}
 #abouth2{
+    width: 100%;
+    text-align: center;
     display: inline-block;
 }
+.abouttext{
+    display: inline-block;
+    width: 48%;
+    
+}
+/*
+.lorem{
+margin: 0;
+    top: 0;
+}
+*/
+#jn {
+    width: 48%;
+    height: 300px;
+    float: left;
+    margin: 10px;
+}
+
+#jn img {
+    width: 50%;
+    margin: 0 40px 0 40px;
+}
+
 #skill {
     position: relative;
-    height: 400px;
-    margin:0;
+    height: 300px;
+    margin: 0;
     text-align: center;
 }
-.logo{
+
+.logo {
     display: inline-block;
 }
-.logo figcaption{
+
+.logo figcaption {
     padding-top: 10px;
+}
+
+#portfolio {
+    text-align: center;
+    position: relative;
+    height: 500px;
+}
+
+.port {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    margin: 0;
+}
+#port1{
+    background-image: url(../img/portfolio1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#port2{
+    background-image: url(../img/portfolio2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#port3{
+    background-image: url(../img/portfolio4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.portfoliotext {
+    display: inline-block;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: rgba(200, 200, 200, 0.8);
+    margin: 0;
+
+}
+.portfoliotext p{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border: 1px solid #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+
+    
 }
