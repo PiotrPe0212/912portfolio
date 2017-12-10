@@ -1,35 +1,61 @@
-* {
-	box-sizing: border-box;
-}
-
 body {
-	font-family: 'Roboto', sans-serif;
-	background-color: #222;
-	color: #eee;
+    margin: 0;
+    font-family: "Lato";
 }
 
-h2 {
-	text-transform: uppercase;
+#menu {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    color: #1ac056;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    
 }
 
-#gallery {
-	width: 1024px;
-	margin: 0 auto;
-	text-align: center;
+.menu {
+    display: inline-block;
+    margin:40px;
+    overflow: auto;
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header{
+    background-image:url(../img/header-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top: 50px;
+    color: #fff;
+}
+#Name{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 80px;
+    font-weight: 300;
+    padding-top: 220px;
+    margin: 10px;
+    
+}
+#FED{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    margin: 10px;
+}
+#about{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 650px;
 }
 
-figure {
-	display: inline-block;
-	width: 338px;
-	margin: 0;
-	margin-bottom: 10px;
-}
-
-figure figcaption {
-	text-align: center;
-}
-
-figure img{
-	width: 100%;
-	border: 2px solid #444;
+#jn{
+    
 }
