@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: "Lato";
+    color: #291f1a;
 }
 
 #menu {
@@ -91,12 +92,6 @@ header {
     width: 48%;
     
 }
-/*
-.lorem{
-margin: 0;
-    top: 0;
-}
-*/
 #jn {
     width: 48%;
     height: 300px;
@@ -107,6 +102,7 @@ margin: 0;
 #jn img {
     width: 50%;
     margin: 0 40px 0 40px;
+   padding-left: 50px;
 }
 
 #skill {
@@ -177,8 +173,19 @@ margin: 0;
     border: 1px solid #fff;
     left: 50%;
     transform: translateX(-50%);
-    
-    
+}
+#form{
+    background-color: #213b50;
+    color: #fff;
+    height: 500px;
+}
+.form{
+    margin-top: 20px;
+    display: inline-block;
+    width: 48%;
+}
+.form a{
+    text-decoration: none;
+        color: #1ac056;
 
-    
 }
