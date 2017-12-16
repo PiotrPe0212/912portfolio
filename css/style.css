@@ -5,10 +5,14 @@ body {
     font-family: "Lato";
     color: #291f1a;
 }
-section{
-    width: 100%;
-    padding: 20px 30px 30px 20px;
+
+section {
+    padding: 50px 50px 50px 50px;
     box-sizing: border-box;
+}
+
+span {
+    color: #1ac056
 }
 
 #menu {
@@ -18,51 +22,47 @@ section{
     color: #1ac056;
     position: fixed;
     top: 0;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
     z-index: 10;
 }
 
 ul {
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .menu a {
     text-decoration: none;
-    color: 1ac056;
+    color: #1ac056;
 }
 
-.menu a :hover {
+.menu a:hover {
     color: #291f1a;
 }
 
 .menu {
-    list-style: none;
     display: inline-block;
     padding: 20px 40px;
     overflow: auto;
     float: right;
-    top: 0;
 }
 
-header {
+.front-header {
     background-image: url(../img/header-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 150vh;
+    height: 100vh;
     color: #fff;
+    position: relative;
 }
 
-.mainheader {
+.main-header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     text-align: center;
 }
 
@@ -70,7 +70,6 @@ header {
     font-family: "Roboto";
     font-size: 4em;
     font-weight: 300;
-    padding-top: 50vh;
     margin: 0;
 
 }
@@ -81,19 +80,20 @@ header {
 }
 
 #about {
-    position: relative;
-    height: 700px;
-    margin: 0;
+    /*    position: relative;*/
+    /*    margin: 0;*/
     box-shadow: 0 0px 20px 0px grey;
 }
 
-#abouth2 {
+#about-header {
+    /*
     display: inline-block;
     width: 100%;
+*/
     text-align: center;
 }
 
-.abouttext {
+.about-text {
     display: inline-block;
     text-align: left;
     width: 49%;
@@ -102,18 +102,17 @@ header {
 
 }
 
-#jn {
+#about-img {
     display: inline-block;
     width: 49%;
     text-align: center;
     margin: 0;
-/*    float: left;*/
-    
+    /*    float: left;*/
 }
 
-#jn img {
+#about-img img {
     width: 50%;
-/*
+    /*
     margin: 0 40px 0 40px;
     padding-left: 50px;
 */
@@ -122,9 +121,9 @@ header {
 }
 
 #skill {
-    position: relative;
-    height: 300px;
-    margin: 0;
+    /*    Sekcja nie ma marginesów, nie pozycjonuje wewnątrz absolutnie więc nie trzeba ustawiac relatywnie*/
+    /*    position: relative;*/
+    /*    margin: 0;*/
     text-align: center;
 }
 
@@ -132,70 +131,76 @@ header {
     display: inline-block;
 }
 
+/*Paddding do wypelniania margines do pozycjonowania*/
+
 .logo figcaption {
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 #portfolio {
     text-align: center;
-    position: relative;
-    height: 500px;
+    /*    position: relative;*/
 }
 
-.port {
+.portfolio-boxes {
     display: inline-block;
-    width: 350px;
+    width: 33.333333%;
     height: 350px;
     margin: 0;
+    /*    Usunie przerwy miedzy obrazkami. Można równiez wyzerować font size, ale potem trzeba powrócić z wielkością*/
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#port1 {
+.clear {
+    clear: both;
+}
+
+#portfolio-box1 {
     background-image: url(../img/portfolio1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
 }
 
-#port2 {
+#portfolio-box2 {
     background-image: url(../img/portfolio2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
 }
 
-#port3 {
+#portfolio-box3 {
     background-image: url(../img/portfolio4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
 }
 
-.portfoliotext {
-    display: inline-block;
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    left: 50%;
-    transform: translateX(-50%);
+.portfolio-text {
+    height: 100%;
+    /*    Borderbox sprawia że padding jest w środku boxa*/
+    box-sizing: border-box;
     color: #fff;
     background-color: rgba(33, 59, 80, 0.8);
     margin: 0;
     opacity: 0;
+    padding: 10px;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio-text:hover {
+    opacity: 1;
 
 }
-.portfoliotext:hover {
-    opacity: 1;
-}
-.portfoliotext p {
-    position: absolute;
-    height: 90%;
-    width: 90%;
+
+.portfolio-text article {
+    height: 100%;
     border: 1px solid #fff;
-    left: 50%;
-    transform: translateX(-50%);
+    /*    dopasowanie bloku do wartości w środku i wycentrowanie*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .fa-link {
+    font-size: 40px;
 }
 
 .form a {
@@ -204,7 +209,7 @@ header {
 
 }
 
-#formh2 {
+#form-header {
     margin: 0;
     padding: 20px 0 20px 20px;
 }
@@ -212,51 +217,80 @@ header {
 #form {
     background-color: #213b50;
     color: #fff;
-    height: 500px;
 }
 
 .form {
-    position: relative;
-    top: 0;
+/*    position: relative;*/
+    vertical-align: top;
+/*    top: 0;*/
     margin-top: 20px;
     display: inline-block;
     width: 48%;
-    padding-left: 20px;
+/*    padding-left: 20px;*/
 }
 
-.form input[type=text],
-.form input[type=email],
+.form input[type="text"],
+.form input[type="email"],
 form textarea {
     background-color: #2b4a64;
     border: 1px solid transparent;
-    width: 500px;
-    margin: 10px 0 10px 0;
-    padding-left: 10px;
-    padding-top: 10px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-family: "Lato";
+    color: #fff;
+    box-sizing: border-box;
 }
 
-.form input[type=text],
-.form input[type=email] {
+.form input[type="text"],
+.form input[type="email"] {
     height: 40px;
 }
 
 .form textarea {
     height: 100px;
+    padding-top: 10px;
 
 }
-
-.form input[type=submit] {
+/*Typ powinien być w cudzysłowie bo niektore przeglądarki inaczje go nie czytaja*/
+.form input[type="submit"] {
+    font-family: "Lato";
+    color: #fff;
+/*    border-color: ;*/
     padding: 0;
-    position: relative;
+/*    position: relative;*/
     background-color: #1ac056;
     border: 1px solid transparent;
     height: 30px;
     width: 60px;
-    left: 450px;
-    
+/*    left: 450px;*/
+    cursor: pointer;
+    float: right;
+
 }
+
+.form input[type="submit"]:hover {
+    border-color: rgba( 255, 255, 255, 1);
+}
+
 .social {
+    margin: 0 50px 0 0;
     display: inline-block;
     width: 50px;
     height: 50px;
+}
+
+#social-logos {
+    margin-top: 120px;
+
+}
+
+footer {
+    background-color: #142634;
+    color: #fff;
+    padding: 10px;
+}
+
+footer p{
+    margin: 0;
 }
