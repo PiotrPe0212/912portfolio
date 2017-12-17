@@ -15,7 +15,7 @@ span {
     color: #1ac056
 }
 
-#menu {
+#menu-container {
     height: 60px;
     width: 100%;
     background-color: #ffffff;
@@ -25,26 +25,31 @@ span {
     z-index: 10;
 }
 
-ul {
+#menu-container ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: right;
+    
 }
 
-.menu a {
+.menu-list a {
     text-decoration: none;
     color: #1ac056;
 }
 
-.menu a:hover {
+.menu-list a:hover {
     color: #291f1a;
 }
-
-.menu {
+#menu-container .toggle, #menu-container #drop{
+    display: none;
+} 
+.menu-list {
     display: inline-block;
     padding: 20px 40px;
     overflow: auto;
-    float: right;
+    text-align: right;
+/*    float: right;*/
 }
 
 .front-header {
@@ -75,7 +80,7 @@ ul {
 }
 
 #FED {
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 200;
 }
 
@@ -104,7 +109,6 @@ ul {
 
 #about-img {
     display: inline-block;
-    width: 49%;
     text-align: center;
     margin: 0;
     /*    float: left;*/

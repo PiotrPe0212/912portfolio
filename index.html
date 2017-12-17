@@ -18,12 +18,14 @@
 
 <body>
     <!--   Main navigation-->
-    <nav id="menu">
+    <nav id="menu-container">
+       <label for="drop" class="toggle">Menu</label>
+       <input type="checkbox" id="drop">
         <ul>
-            <li class="menu"><a href="">o mnie</a></li>
-            <li class="menu"><a href="">umiejetności</a></li>
-            <li class="menu"><a href="">portfolio</a></li>
-            <li class="menu"><a href="">kontakt</a></li>
+            <li class="menu-list"><a href="">o mnie</a></li>
+            <li class="menu-list"><a href="">umiejetności</a></li>
+            <li class="menu-list"><a href="">portfolio</a></li>
+            <li class="menu-list"><a href="">kontakt</a></li>
         </ul>
 
     </nav>
@@ -113,8 +115,10 @@
     <section id="form">
         <h2 id="form-header">Janusz <span>Nowak</span></h2>
         <adess class="form">
+           <div id="data">
             ul. Mostowa6/13<br> 31-061 Kraków <br>
             <br> tel. 606 332 234<br> e-mail: <a href="mailto:email@echoecho.com?subject=SweetWords">piotrax@wp.pl</a><br>
+            </div>
             <div id="social-logos">
                 <figure class="social"><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i>
 </a>
